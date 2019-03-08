@@ -13,7 +13,7 @@ export class ReadComponent implements OnInit {
   tutorials: Observable<Tutorial[]>;
 
   constructor(private store: Store<AppState>) {
-    this.tutorials = this.store.select("tutorials");
+    this.tutorials = this.store.select("tutorial");
 
     console.log(this.tutorials);
   }
